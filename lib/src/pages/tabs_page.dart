@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
+import 'package:news_app/src/pages/tab1_page.dart';
+
 class TabsPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -42,9 +44,7 @@ class _Pages extends StatelessWidget {
       //efecto de arrastre al final
       // physics: BouncingScrollPhysics(),
       children: [
-        Container(
-          color: Colors.red,
-        ),
+        Tab1Page(),
         Container(
           color: Colors.green,
         ),
