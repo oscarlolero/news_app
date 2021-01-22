@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
+import 'package:news_app/src/pages/tab2_page.dart';
 import 'package:news_app/src/pages/tab1_page.dart';
 
 class TabsPage extends StatelessWidget {
@@ -39,15 +40,14 @@ class _Pages extends StatelessWidget {
 
     final navegationModel = Provider.of<_NavigationModel>(context);
     return PageView(
+
       controller: navegationModel.pageController,
       physics: NeverScrollableScrollPhysics(),
       //efecto de arrastre al final
       // physics: BouncingScrollPhysics(),
       children: [
         Tab1Page(),
-        Container(
-          color: Colors.green,
-        ),
+        Tab2Page(),
       ],
     );
   }
